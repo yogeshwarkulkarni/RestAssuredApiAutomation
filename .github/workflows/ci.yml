@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  schedule:
+    # Run every night at 9:00 PM Pacific (5:00 UTC; PST)
+    - cron: '0 5 * * *'
 
 jobs:
   build-and-test:
