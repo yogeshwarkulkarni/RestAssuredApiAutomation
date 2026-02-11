@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Automation Suite">
+
+    <test name="API Tests">
+        <classes>
+            <class name="camel.api.tests.PostsApiTest"/>
+            <class name="camel.api.tests.UsersApiTest"/>
+        </classes>
+    </test>
+
+</suite>
