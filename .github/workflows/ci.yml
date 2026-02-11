@@ -9,6 +9,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write   # required for publish-unit-test-result-action to create check runs
 
     steps:
       - name: Checkout
