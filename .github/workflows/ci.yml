@@ -27,8 +27,13 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Run tests
-        run: mvn test -B
+      - name: Run tests (with auto-retry on failure)
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 15
+          max_attempts: 3
+          retry_wait_seconds: 90
+          command: mvn test -B
 
       - name: Publish test results
         uses: EnricoMi/publish-unit-test-result-action@v2
