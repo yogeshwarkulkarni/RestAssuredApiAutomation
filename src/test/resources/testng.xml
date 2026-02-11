@@ -5,6 +5,8 @@
         <classes>
             <class name="camel.api.tests.PostsApiTest"/>
             <class name="camel.api.tests.UsersApiTest"/>
+            <class name="camel.api.tests.CommentsApiTest"/>
+            <class name="camel.api.tests.TodosApiTest"/>
         </classes>
     </test>
 
