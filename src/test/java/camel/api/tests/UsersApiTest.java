@@ -55,4 +55,5 @@ public class UsersApiTest {
                 .then()
                 .statusCode(404);
     }
+    
 }
